@@ -1,0 +1,25 @@
+{
+    "name": "visual-spark-workplace-ui-backend",
+    "version": "1.0.0",
+    "private": true,
+    "license": "MIT",
+    "devDependencies": {
+        "dotenv": "^8.2.0",
+        "eslint-config-prettier": "^2.4.0",
+        "eslint-plugin-prettier": "^3.1.2",
+        "nodemon": "^2.0.4",
+        "prettier": "^1.19.1"
+    },
+    "dependencies": {
+        "axios": "^0.19.2",
+        "express": "^4.17.1",
+        "http-proxy-middleware": "^1.0.5",
+        "lodash": "^4.17.19",
+        "log4js": "^6.1.2"
+    },
+    "scripts": {
+        "start": "nodemon -w app --exec node -r dotenv/config --inspect app/server.js",
+        "start:prod": "node app/server.js",
+        "build": "echo \"No build is required\""
+    }
+}
